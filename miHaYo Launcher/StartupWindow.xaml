@@ -1,0 +1,123 @@
+﻿<Window x:Class="miHaYo_Launcher.StartupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:miHaYo_Launcher"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="StartupWindow" Height="260" Width="250" Background="{x:Null}" WindowStyle="None" AllowsTransparency="True">
+    <Window.Resources>
+        <Storyboard x:Key="Stratup">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="mi" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="mi" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.7000000" Value="-114,-10,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ha" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.965"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ha" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.1000000" Value="0,-190,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="0,-10,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="yo" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.2000000" Value="100,-190,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+                <SplineThicknessKeyFrame KeyTime="00:00:00.9000000" Value="100,-10,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="yo" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="tech" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-134,208,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.6000000" Value="-134,50,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="tech" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="otakus" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.9000000" Value="-65,210,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.7000000" Value="-65,50,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="otakus" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="save" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="save" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:01" Value="2,210,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.8000000" Value="2,50,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="the" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:01.1000000" Value="47,210,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="47,50,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="the" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="world" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:01.2000000" Value="105,210,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:02" Value="105,50,0,0">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="world" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- 210->50 -->
+    </Window.Resources>
+    <Grid>
+        <Image x:Name="mi" Source="{StaticResource BSI_mi}" Height="60" Width="60" Margin="-114,-190,0,0" Opacity="0"/>
+        <Image x:Name="ha" Source="{StaticResource BSI_ha}" Height="60" Width="60" Margin="0,-190,0,0" Opacity="0"/>
+        <Image x:Name="yo" Source="{StaticResource BSI_yo}" Height="60" Width="60" Margin="100,-190,0,0" Opacity="0"/>
+        <Image x:Name="tech" Source="{StaticResource BSI_tech}" Height="30" Width="100" Margin="-134,210,0,0" Opacity="0"/>
+        <Image x:Name="otakus" Source="{StaticResource BSI_otakus}" Height="30" Width="100" Margin="-65,210,0,0" Opacity="0"/>
+        <Image x:Name="save" Source="{StaticResource BSI_save}" Height="30" Width="100" Margin="2,210,0,0" Opacity="0"/>
+        <Image x:Name="the" Source="{StaticResource BSI_the}" Height="30" Width="100" Margin="47,210,0,0" Opacity="0"/>
+        <Image x:Name="world" Source="{StaticResource BSI_world}" Height="30" Width="100" Margin="105,210,0,0" Opacity="0"/>
+    </Grid>
+</Window>

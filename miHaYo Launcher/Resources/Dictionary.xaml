@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <BitmapImage x:Key="WSI_mi" UriSource="./StratupImages/White/mi.png"/>
+    <BitmapImage x:Key="WSI_ha" UriSource="./StratupImages/White/ha.png"/>
+    <BitmapImage x:Key="WSI_yo" UriSource="./StratupImages/White/yo.png"/>
+    <BitmapImage x:Key="WSI_otakus" UriSource="./StratupImages/White/OTAKUS.png"/>
+    <BitmapImage x:Key="WSI_save" UriSource="./StratupImages/White/SAVE.png"/>
+    <BitmapImage x:Key="WSI_tech" UriSource="./StratupImages/White/TECH.png"/>
+    <BitmapImage x:Key="WSI_the" UriSource="./StratupImages/White/THE.png"/>
+    <BitmapImage x:Key="WSI_world" UriSource="./StratupImages/White/WORLD.png"/>
+
+    <BitmapImage x:Key="BSI_mi" UriSource="./StratupImages/Black/mi.png"/>
+    <BitmapImage x:Key="BSI_ha" UriSource="./StratupImages/Black/ha.png"/>
+    <BitmapImage x:Key="BSI_yo" UriSource="./StratupImages/Black/yo.png"/>
+    <BitmapImage x:Key="BSI_otakus" UriSource="./StratupImages/Black/OTAKUS.png"/>
+    <BitmapImage x:Key="BSI_save" UriSource="./StratupImages/Black/SAVE.png"/>
+    <BitmapImage x:Key="BSI_tech" UriSource="./StratupImages/Black/TECH.png"/>
+    <BitmapImage x:Key="BSI_the" UriSource="./StratupImages/Black/THE.png"/>
+    <BitmapImage x:Key="BSI_world" UriSource="./StratupImages/Black/WORLD.png"/>
+</ResourceDictionary>

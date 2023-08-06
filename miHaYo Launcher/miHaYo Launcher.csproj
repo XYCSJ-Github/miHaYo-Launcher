@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>miHaYo_Launcher</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\StratupImages\Black\ha.png" />
+    <None Remove="Resources\StratupImages\Black\mi.png" />
+    <None Remove="Resources\StratupImages\Black\OTAKUS.png" />
+    <None Remove="Resources\StratupImages\Black\SAVE.png" />
+    <None Remove="Resources\StratupImages\Black\TECH.png" />
+    <None Remove="Resources\StratupImages\Black\THE.png" />
+    <None Remove="Resources\StratupImages\Black\WORLD.png" />
+    <None Remove="Resources\StratupImages\Black\yo.png" />
+    <None Remove="Resources\StratupImages\White\ha.png" />
+    <None Remove="Resources\StratupImages\White\mi.png" />
+    <None Remove="Resources\StratupImages\White\OTAKUS.png" />
+    <None Remove="Resources\StratupImages\White\SAVE.png" />
+    <None Remove="Resources\StratupImages\White\TECH.png" />
+    <None Remove="Resources\StratupImages\White\THE.png" />
+    <None Remove="Resources\StratupImages\White\WORLD.png" />
+    <None Remove="Resources\StratupImages\White\yo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\StratupImages\Black\WORLD.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\StratupImages\Black\ha.png" />
+    <Resource Include="Resources\StratupImages\Black\mi.png" />
+    <Resource Include="Resources\StratupImages\Black\OTAKUS.png" />
+    <Resource Include="Resources\StratupImages\Black\SAVE.png" />
+    <Resource Include="Resources\StratupImages\Black\TECH.png" />
+    <Resource Include="Resources\StratupImages\Black\THE.png" />
+    <Resource Include="Resources\StratupImages\Black\yo.png" />
+    <Resource Include="Resources\StratupImages\White\ha.png" />
+    <Resource Include="Resources\StratupImages\White\mi.png" />
+    <Resource Include="Resources\StratupImages\White\OTAKUS.png" />
+    <Resource Include="Resources\StratupImages\White\SAVE.png" />
+    <Resource Include="Resources\StratupImages\White\TECH.png" />
+    <Resource Include="Resources\StratupImages\White\THE.png" />
+    <Resource Include="Resources\StratupImages\White\WORLD.png" />
+    <Resource Include="Resources\StratupImages\White\yo.png" />
+  </ItemGroup>
+
+</Project>
