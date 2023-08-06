@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:miHaYo_Launcher"
         mc:Ignorable="d"
+        Topmost="True"
         WindowStartupLocation="CenterScreen"
         Title="StartupWindow" Height="260" Width="250" Background="{x:Null}" WindowStyle="None" AllowsTransparency="True">
     <Window.Resources>
@@ -108,7 +109,6 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <!-- 210->50 -->
     </Window.Resources>
     <Grid>
         <Image x:Name="mi" Source="{StaticResource BSI_mi}" Height="60" Width="60" Margin="-114,-190,0,0" Opacity="0"/>

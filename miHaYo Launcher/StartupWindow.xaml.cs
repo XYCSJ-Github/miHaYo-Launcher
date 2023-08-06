@@ -24,23 +24,19 @@ namespace miHaYo_Launcher
         public StartupWindow()
         {
             InitializeComponent();
-            Thread thr_ssb = new Thread(startsb);
-            thr_ssb.Start();
+
+            Thread thr = new Thread(start);
+            thr.Start();
         }
 
-        public void startsb()
+        public void start()
         {
-            Thread.Sleep(1000);
-
-            Dispatcher.BeginInvoke(
-                new Action(
-                    delegate 
-                    { 
-                        var ssb = (Storyboard)this.FindResource("Stratup");
-                        ssb.Begin();
-                    }
-                    )
-                );
+            Thread.Sleep(1500);
+            Dispatcher.BeginInvoke(new Action(delegate { var ssb = (Storyboard)this.FindResource("Stratup"); ssb.Begin(); }));
+            Thread.Sleep(2300);
+            Dispatcher.BeginInvoke(new Action(delegate { MainWindow mw = new MainWindow(); mw.Show(); }));
+            Thread.Sleep(2500);
+            Dispatcher.BeginInvoke(new Action(delegate { this.Close(); }));
         }
     }
 }
