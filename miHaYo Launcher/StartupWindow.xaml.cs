@@ -35,7 +35,7 @@ namespace miHaYo_Launcher
             Dispatcher.BeginInvoke(new Action(delegate { var ssb = (Storyboard)this.FindResource("Stratup"); ssb.Begin(); }));
             Thread.Sleep(2300);
             Dispatcher.BeginInvoke(new Action(delegate { MainWindow mw = new MainWindow(); mw.Show(); }));
-            Thread.Sleep(2500);
+            Thread.Sleep(145);
             Dispatcher.BeginInvoke(new Action(delegate { this.Close(); }));
         }
     }

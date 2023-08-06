@@ -5,8 +5,91 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:miHaYo_Launcher"
         mc:Ignorable="d"
-        Title="miHaYo Launcher" Height="730" Width="1280" WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Title="miHaYo Launcher" Height="730" Width="1280">
+    <Window.Resources>
+        <Storyboard x:Key="icon">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="mi" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-114,-35,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-114,-35,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ha" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="0,-35,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="0,-35,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="yo" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="100,-35,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="100,-35,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="tech" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-134,25,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-134,25,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="otakus" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-65,25,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-65,25,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="save" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="2,25,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="2,25,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="the" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="47,25,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="47,25,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="world" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="105,25,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="105,25,0,-673">
+                    <SplineThicknessKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.5,1"/>
+                    </SplineThicknessKeyFrame.KeySpline>
+                </SplineThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
     <Grid>
-        
+        <Image x:Name="mi" Source="{StaticResource BSI_mi}" Height="60" Width="60" Margin="-114,-35,0,0"/>
+        <Image x:Name="ha" Source="{StaticResource BSI_ha}" Height="60" Width="60" Margin="0,-35,0,0"/>
+        <Image x:Name="yo" Source="{StaticResource BSI_yo}" Height="60" Width="60" Margin="100,-35,0,0"/>
+        <Image x:Name="tech" Source="{StaticResource BSI_tech}" Height="30" Width="100" Margin="-134,25,0,0"/>
+        <Image x:Name="otakus" Source="{StaticResource BSI_otakus}" Height="30" Width="100" Margin="-65,25,0,0"/>
+        <Image x:Name="save" Source="{StaticResource BSI_save}" Height="30" Width="100" Margin="2,25,0,0"/>
+        <Image x:Name="the" Source="{StaticResource BSI_the}" Height="30" Width="100" Margin="47,25,0,0"/>
+        <Image x:Name="world" Source="{StaticResource BSI_world}" Height="30" Width="100" Margin="105,25,0,0"/>
+
+        <Image x:Name="b2" Source="{StaticResource GI_b2}" Height="80" Width="80" Margin="65,605,1135,30"/>
+        <Image x:Name="b3" Source="{StaticResource GI_b3}" Height="80" Width="80" Margin="225,605,975,30"/>
+        <Image x:Name="jq0" Source="{StaticResource GI_jq0}" Height="80" Width="80" Margin="398,605,802,30"/>
+        <Image x:Name="sr" Source="{StaticResource GI_b4}" Height="80" Width="80" Margin="793,605,407,30"/>
+        <Image x:Name="wd" Source="{StaticResource GI_wd}" Height="80" Width="80" Margin="960,605,240,30"/>
+        <Image x:Name="ys" Source="{StaticResource GI_ys}" Height="80" Width="80" Margin="1120,605,80,30"/>
     </Grid>
 </Window>

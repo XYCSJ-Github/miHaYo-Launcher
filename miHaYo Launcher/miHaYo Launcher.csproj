@@ -6,9 +6,16 @@
     <RootNamespace>miHaYo_Launcher</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>th.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\GameIcon\bb.png" />
+    <None Remove="Resources\GameIcon\bbb.png" />
+    <None Remove="Resources\GameIcon\jq0.png" />
+    <None Remove="Resources\GameIcon\sr.png" />
+    <None Remove="Resources\GameIcon\wd.png" />
+    <None Remove="Resources\GameIcon\ys.png" />
     <None Remove="Resources\StratupImages\Black\ha.png" />
     <None Remove="Resources\StratupImages\Black\mi.png" />
     <None Remove="Resources\StratupImages\Black\OTAKUS.png" />
@@ -28,6 +35,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="th.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\GameIcon\bb.png" />
+    <Resource Include="Resources\GameIcon\bbb.png" />
+    <Resource Include="Resources\GameIcon\jq0.png" />
+    <Resource Include="Resources\GameIcon\sr.png" />
+    <Resource Include="Resources\GameIcon\wd.png" />
+    <Resource Include="Resources\GameIcon\ys.png" />
     <Resource Include="Resources\StratupImages\Black\WORLD.png" />
   </ItemGroup>
 
