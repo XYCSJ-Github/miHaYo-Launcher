@@ -14,59 +14,55 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="mi" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:00.7000000" Value="-114,-10,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.7000000" Value="-114,-10,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ha" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.965"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ha" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:00.1000000" Value="0,-190,0,0"/>
-                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="0,-10,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.1000000" Value="0,-190,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="0,-10,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="yo" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:00.2000000" Value="100,-190,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
-                <SplineThicknessKeyFrame KeyTime="00:00:00.9000000" Value="100,-10,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.2000000" Value="100,-190,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.9000000" Value="100,-10,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="yo" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="tech" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-134,208,0,0"/>
-                <SplineThicknessKeyFrame KeyTime="00:00:01.6000000" Value="-134,50,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-134,208,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:01.6000000" Value="-134,50,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="tech" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="otakus" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:00.9000000" Value="-65,210,0,0"/>
-                <SplineThicknessKeyFrame KeyTime="00:00:01.7000000" Value="-65,50,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.9000000" Value="-65,210,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:01.7000000" Value="-65,50,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="otakus" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
@@ -77,32 +73,32 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="save" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:01" Value="2,210,0,0"/>
-                <SplineThicknessKeyFrame KeyTime="00:00:01.8000000" Value="2,50,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:01" Value="2,210,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:01.8000000" Value="2,50,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="the" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:01.1000000" Value="47,210,0,0"/>
-                <SplineThicknessKeyFrame KeyTime="00:00:01.9000000" Value="47,50,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:01.1000000" Value="47,210,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="47,50,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="the" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="world" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <SplineThicknessKeyFrame KeyTime="00:00:01.2000000" Value="105,210,0,0"/>
-                <SplineThicknessKeyFrame KeyTime="00:00:02" Value="105,50,0,0">
-                    <SplineThicknessKeyFrame.KeySpline>
-                        <KeySpline ControlPoint1="0,0.6" ControlPoint2="0.5,1"/>
-                    </SplineThicknessKeyFrame.KeySpline>
-                </SplineThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="00:00:01.2000000" Value="105,210,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:02" Value="105,50,0,0">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="3"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="world" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
