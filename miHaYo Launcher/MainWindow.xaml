@@ -1,4 +1,4 @@
-﻿<Window x:Class="miHaYo_Launcher.MainWindow"
+﻿<Window x:Name="window" x:Class="miHaYo_Launcher.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,18 +8,18 @@
         WindowStartupLocation="CenterScreen"
         Title="miHaYo Launcher" Height="730" Width="1280">
     <Window.Resources>
-        <Storyboard x:Key="icon">
+        <Storyboard x:Key="Stratup">
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="mi" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-114,-35,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-114,-35,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-114,-35,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
-                        <PowerEase EasingMode="EaseInOut" Power="2"/>
+                        <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ha" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="0,-35,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="0,-35,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="0,-35,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
@@ -27,7 +27,7 @@
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="yo" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="100,-35,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="100,-35,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="100,-35,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
@@ -35,7 +35,7 @@
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="tech" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-134,25,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-134,25,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-134,25,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
@@ -43,7 +43,7 @@
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="otakus" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="-65,25,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-65,25,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="-65,25,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
@@ -51,7 +51,7 @@
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="save" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="2,25,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="2,25,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="2,25,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
@@ -59,7 +59,7 @@
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="the" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="47,25,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="47,25,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="47,25,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
@@ -67,14 +67,13 @@
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="world" Storyboard.TargetProperty="(FrameworkElement.Margin)">
                 <EasingThicknessKeyFrame KeyTime="00:00:00.8000000" Value="105,25,0,0"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="105,25,0,-633">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.9000000" Value="105,25,0,-639">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseInOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="jq0" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="370,0,830,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:01.2000000" Value="370,0,830,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:02.1000000" Value="370,616,830,0">
                     <EasingThicknessKeyFrame.EasingFunction>
@@ -83,17 +82,14 @@
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="jq0" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="sr" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="sr" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="829,0,371,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:01.2000000" Value="829,0,371,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:02.1000000" Value="829,616,371,0">
                     <EasingThicknessKeyFrame.EasingFunction>
@@ -102,12 +98,10 @@
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="b3" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="b3" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="220,0,980,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:01.4000000" Value="220,0,980,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:02.2000000" Value="220,616,980,0">
                     <EasingThicknessKeyFrame.EasingFunction>
@@ -116,12 +110,10 @@
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="wd" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="wd" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="979,0,222,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:01.4000000" Value="979,0,222,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:02.2000000" Value="979,616,222,0">
                     <EasingThicknessKeyFrame.EasingFunction>
@@ -130,12 +122,10 @@
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="b2" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="b2" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="70,0,1130,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:01.6000000" Value="70,0,1130,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:02.3000000" Value="70,616,1130,0">
                     <EasingThicknessKeyFrame.EasingFunction>
@@ -144,12 +134,10 @@
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ys" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="ys" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="1130,0,70,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:01.6000000" Value="1130,0,70,0"/>
                 <EasingThicknessKeyFrame KeyTime="00:00:02.3000000" Value="1130,616,70,0">
                     <EasingThicknessKeyFrame.EasingFunction>
@@ -157,9 +145,32 @@
                     </EasingThicknessKeyFrame.EasingFunction>
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.7000000" Value="30,4,30,2"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:02.5000000" Value="30,616,30,2">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="4"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.35"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
     <Grid>
+        <Rectangle x:Name="rectangle" Opacity="0" Fill="Black" RenderTransformOrigin="0.5,0.5" Margin="30,616,30,2" RadiusY="23" RadiusX="23">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
         <Image x:Name="mi" Source="{StaticResource BSI_mi}" Height="60" Width="60" Margin="-114,-35,0,0"/>
         <Image x:Name="ha" Source="{StaticResource BSI_ha}" Height="60" Width="60" Margin="0,-35,0,0"/>
         <Image x:Name="yo" Source="{StaticResource BSI_yo}" Height="60" Width="60" Margin="100,-35,0,0"/>
@@ -169,11 +180,11 @@
         <Image x:Name="the" Source="{StaticResource BSI_the}" Height="30" Width="100" Margin="47,25,0,0"/>
         <Image x:Name="world" Source="{StaticResource BSI_world}" Height="30" Width="100" Margin="105,25,0,0"/>
 
-        <Image x:Name="b2" Source="{StaticResource GI_b2}" Margin="70,616,1130,0"/>
-        <Image x:Name="b3" Source="{StaticResource GI_b3}" Margin="220,616,980,0"/>
-        <Image x:Name="jq0" Source="{StaticResource GI_jq0}" Margin="370,616,830,0"/>
-        <Image x:Name="sr" Source="{StaticResource GI_b4}" Margin="829,616,371,0"/>
-        <Image x:Name="wd" Source="{StaticResource GI_wd}" Margin="979,616,222,0"/>
-        <Image x:Name="ys" Source="{StaticResource GI_ys}" Margin="1130,616,70,0"/>
+        <Image x:Name="b2" Source="{StaticResource GI_b2}" Margin="70,616,1130,0" Opacity="0"/>
+        <Image x:Name="b3" Source="{StaticResource GI_b3}" Margin="220,616,980,0" Opacity="0"/>
+        <Image x:Name="jq0" Source="{StaticResource GI_jq0}" Margin="370,616,830,0" Opacity="0"/>
+        <Image x:Name="sr" Source="{StaticResource GI_b4}" Margin="829,616,371,0" Opacity="0"/>
+        <Image x:Name="wd" Source="{StaticResource GI_wd}" Margin="979,616,222,0" Opacity="0"/>
+        <Image x:Name="ys" Source="{StaticResource GI_ys}" Margin="1130,616,70,0" Opacity="0"/>
     </Grid>
 </Window>

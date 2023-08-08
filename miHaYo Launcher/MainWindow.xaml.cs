@@ -25,7 +25,7 @@ namespace miHaYo_Launcher
         {
             this.ResizeMode = ResizeMode.CanMinimize;
             InitializeComponent();
-            var iconsb = (Storyboard)this.FindResource("icon");
+            var iconsb = (Storyboard)this.FindResource("Stratup");
             iconsb.Begin();
         }
     }
