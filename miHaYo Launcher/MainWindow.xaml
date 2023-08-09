@@ -155,7 +155,7 @@
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.35"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.35"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
@@ -171,6 +171,7 @@
             </Rectangle.RenderTransform>
         </Rectangle>
 
+        <!--miHaYo图标-->
         <Image x:Name="mi" Source="{StaticResource BSI_mi}" Height="60" Width="60" Margin="-114,-35,0,0"/>
         <Image x:Name="ha" Source="{StaticResource BSI_ha}" Height="60" Width="60" Margin="0,-35,0,0"/>
         <Image x:Name="yo" Source="{StaticResource BSI_yo}" Height="60" Width="60" Margin="100,-35,0,0"/>
@@ -179,12 +180,21 @@
         <Image x:Name="save" Source="{StaticResource BSI_save}" Height="30" Width="100" Margin="2,25,0,0"/>
         <Image x:Name="the" Source="{StaticResource BSI_the}" Height="30" Width="100" Margin="47,25,0,0"/>
         <Image x:Name="world" Source="{StaticResource BSI_world}" Height="30" Width="100" Margin="105,25,0,0"/>
-
+        
+        <!--游戏图标-->
         <Image x:Name="b2" Source="{StaticResource GI_b2}" Margin="70,616,1130,0" Opacity="0"/>
         <Image x:Name="b3" Source="{StaticResource GI_b3}" Margin="220,616,980,0" Opacity="0"/>
         <Image x:Name="jq0" Source="{StaticResource GI_jq0}" Margin="370,616,830,0" Opacity="0"/>
         <Image x:Name="sr" Source="{StaticResource GI_b4}" Margin="829,616,371,0" Opacity="0"/>
         <Image x:Name="wd" Source="{StaticResource GI_wd}" Margin="979,616,222,0" Opacity="0"/>
         <Image x:Name="ys" Source="{StaticResource GI_ys}" Margin="1130,616,70,0" Opacity="0"/>
+        
+        <!--游戏图标按钮覆盖层-->
+        <Button x:Name="button_b2" Content="Button" Margin="70,625,1130,9" Opacity="0" Click="button_b2_Click"/>
+        <Button x:Name="button_b3" Content="Button" Margin="220,625,980,9" Opacity="0"/>
+        <Button x:Name="button_jq0" Content="Button" Margin="370,625,830,9" Opacity="0"/>
+        <Button x:Name="button_sr" Content="Button" Margin="829,625,371,9" Opacity="0"/>
+        <Button x:Name="button_wd" Content="Button" Margin="979,625,222,9" Opacity="0"/>
+        <Button x:Name="button_ys" Content="Button" Margin="1130,625,70,9" Opacity="0"/>
     </Grid>
 </Window>

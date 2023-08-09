@@ -28,5 +28,10 @@ namespace miHaYo_Launcher
             var iconsb = (Storyboard)this.FindResource("Stratup");
             iconsb.Begin();
         }
+
+        private void button_b2_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
