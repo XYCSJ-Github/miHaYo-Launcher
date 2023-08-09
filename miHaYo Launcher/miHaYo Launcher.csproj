@@ -10,6 +10,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Background\1\b2 1.png" />
+    <None Remove="Resources\Background\1\b2.png" />
+    <None Remove="Resources\Background\1\b3.png" />
+    <None Remove="Resources\Background\1\sr.png" />
+    <None Remove="Resources\Background\1\wd.png" />
+    <None Remove="Resources\Background\1\ys.png" />
+    <None Remove="Resources\Background\2\B2.png" />
+    <None Remove="Resources\Background\2\B3.png" />
+    <None Remove="Resources\Background\2\jq0.png" />
+    <None Remove="Resources\Background\2\sr.png" />
+    <None Remove="Resources\Background\2\wd.png" />
+    <None Remove="Resources\Background\2\ys.png" />
+    <None Remove="Resources\Background\bg.png" />
+    <None Remove="Resources\Background\main_bk.png" />
+    <None Remove="Resources\Background\title.png" />
     <None Remove="Resources\GameIcon\bb.png" />
     <None Remove="Resources\GameIcon\bbb.png" />
     <None Remove="Resources\GameIcon\jq0.png" />
@@ -39,6 +54,33 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Background\1\sr.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Background\1\b2 1.png" />
+    <Resource Include="Resources\Background\1\b2.png" />
+    <Resource Include="Resources\Background\1\b3.png" />
+    <Resource Include="Resources\Background\1\wd.png" />
+    <Resource Include="Resources\Background\1\ys.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Background\2\sr.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Background\2\B2.png" />
+    <Resource Include="Resources\Background\2\B3.png" />
+    <Resource Include="Resources\Background\2\jq0.png" />
+    <Resource Include="Resources\Background\2\wd.png" />
+    <Resource Include="Resources\Background\2\ys.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Background\bg.png" />
+    <Resource Include="Resources\Background\main_bk.png" />
+    <Resource Include="Resources\Background\title.png" />
     <Resource Include="Resources\GameIcon\bb.png" />
     <Resource Include="Resources\GameIcon\bbb.png" />
     <Resource Include="Resources\GameIcon\jq0.png" />

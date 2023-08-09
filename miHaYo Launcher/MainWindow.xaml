@@ -155,10 +155,24 @@
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.35"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.70"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="mbg" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.85"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="mbg" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.8000000" Value="-10,-80,-10,70"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:02.4000000" Value="-10,-10,-10,-10">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="b2_in"/>
     </Window.Resources>
+    
     <Grid>
         <Rectangle x:Name="rectangle" Opacity="0" Fill="Black" RenderTransformOrigin="0.5,0.5" Margin="30,616,30,2" RadiusY="23" RadiusX="23">
             <Rectangle.RenderTransform>
@@ -170,6 +184,11 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+
+        <!--分背景-->
+        
+        <!--主背景-->
+        <Image x:Name="mbg" Source="{StaticResource MBG_mbg}" Opacity="0" Margin="-10,-80,-10,80"/>
 
         <!--miHaYo图标-->
         <Image x:Name="mi" Source="{StaticResource BSI_mi}" Height="60" Width="60" Margin="-114,-35,0,0"/>

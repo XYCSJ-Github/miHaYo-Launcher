@@ -37,8 +37,8 @@
     <BitmapImage x:Key="BG1_ys" UriSource="./Background/1/ys.png"/>
     
     <!--背景2版-->
-    <BitmapImage x:Key="BG2_b2" UriSource="./Background/2/b2.png"/>
-    <BitmapImage x:Key="BG2_b3" UriSource="./Background/2/b3.png"/>
+    <BitmapImage x:Key="BG2_b2" UriSource="./Background/2/B2.png"/>
+    <BitmapImage x:Key="BG2_b3" UriSource="./Background/2/B3.png"/>
     <BitmapImage x:Key="BG2_sr" UriSource="./Background/2/sr.png"/>
     <BitmapImage x:Key="BG2_wd" UriSource="./Background/2/wd.png"/>
     <BitmapImage x:Key="BG2_ys" UriSource="./Background/2/ys.png"/>
