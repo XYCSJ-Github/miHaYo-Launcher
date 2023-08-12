@@ -154,41 +154,122 @@
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.70"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.7"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="mbg" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.85"/>
             </DoubleAnimationUsingKeyFrames>
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="mbg" Storyboard.TargetProperty="(FrameworkElement.Margin)">
-                <EasingThicknessKeyFrame KeyTime="00:00:01.8000000" Value="-10,-80,-10,70"/>
-                <EasingThicknessKeyFrame KeyTime="00:00:02.4000000" Value="-10,-10,-10,-10">
+                <EasingThicknessKeyFrame KeyTime="00:00:01.8000000" Value="-10,-80,-10,20"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:02.4000000" Value="-10,-30,-10,-30">
                     <EasingThicknessKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseOut"/>
                     </EasingThicknessKeyFrame.EasingFunction>
                 </EasingThicknessKeyFrame>
             </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="b2_in"/>
-    </Window.Resources>
-    
-    <Grid>
-        <Rectangle x:Name="rectangle" Opacity="0" Fill="Black" RenderTransformOrigin="0.5,0.5" Margin="30,616,30,2" RadiusY="23" RadiusX="23">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-
-        <!--分背景-->
         
+        <!--入场-->
+        <Storyboard x:Key="b2_in">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_b2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="b3_in">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sr_in">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_sr" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="wd_in">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ys_in">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_ys" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="jq0_in">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_jp0" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        
+        <!--出场-->
+        <Storyboard x:Key="b2_out">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_b2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="b3_out">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sr_out">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_sr" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="wd_out">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ys_out">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_ys" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="jq0_out">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_jp0" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="mbg_out">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="mbg" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+
+    <Grid>
         <!--主背景-->
         <Image x:Name="mbg" Source="{StaticResource MBG_mbg}" Opacity="0" Margin="-10,-80,-10,80"/>
+
+        <!--分背景-->
+        <Image x:Name="bg_b2" Source="{StaticResource BG1_b2}" Margin="0,-30,0,-30" Opacity="0"/>
+        <Image x:Name="bg_b3" Source="{StaticResource BG1_b3}" Margin="0,-30,0,-30" Opacity="0"/>
+        <Image x:Name="bg_sr" Source="{StaticResource BG1_sr}" Margin="0,-30,0,-36" Opacity="0"/>
+        <Image x:Name="bg_wd" Source="{StaticResource BG1_wd}" Margin="0,-30,0,-30" Opacity="0"/>
+        <Image x:Name="bg_ys" Source="{StaticResource BG1_ys}" Margin="0,-30,0,-30" Opacity="0"/>
+        <Image x:Name="bg_jp0" Source="{StaticResource BG2_jq0}" Margin="0,0,0,0" Opacity="0"/>
+
+        <!--dock栏-->
+        <Rectangle x:Name="rectangle" Opacity="0.7" Fill="Black" RenderTransformOrigin="0.5,0.5" Margin="30,616,30,2" RadiusY="23" RadiusX="23"/>
+
 
         <!--miHaYo图标-->
         <Image x:Name="mi" Source="{StaticResource BSI_mi}" Height="60" Width="60" Margin="-114,-35,0,0"/>
@@ -199,7 +280,7 @@
         <Image x:Name="save" Source="{StaticResource BSI_save}" Height="30" Width="100" Margin="2,25,0,0"/>
         <Image x:Name="the" Source="{StaticResource BSI_the}" Height="30" Width="100" Margin="47,25,0,0"/>
         <Image x:Name="world" Source="{StaticResource BSI_world}" Height="30" Width="100" Margin="105,25,0,0"/>
-        
+
         <!--游戏图标-->
         <Image x:Name="b2" Source="{StaticResource GI_b2}" Margin="70,616,1130,0" Opacity="0"/>
         <Image x:Name="b3" Source="{StaticResource GI_b3}" Margin="220,616,980,0" Opacity="0"/>
@@ -207,13 +288,13 @@
         <Image x:Name="sr" Source="{StaticResource GI_b4}" Margin="829,616,371,0" Opacity="0"/>
         <Image x:Name="wd" Source="{StaticResource GI_wd}" Margin="979,616,222,0" Opacity="0"/>
         <Image x:Name="ys" Source="{StaticResource GI_ys}" Margin="1130,616,70,0" Opacity="0"/>
-        
+
         <!--游戏图标按钮覆盖层-->
         <Button x:Name="button_b2" Content="Button" Margin="70,625,1130,9" Opacity="0" Click="button_b2_Click"/>
-        <Button x:Name="button_b3" Content="Button" Margin="220,625,980,9" Opacity="0"/>
-        <Button x:Name="button_jq0" Content="Button" Margin="370,625,830,9" Opacity="0"/>
-        <Button x:Name="button_sr" Content="Button" Margin="829,625,371,9" Opacity="0"/>
-        <Button x:Name="button_wd" Content="Button" Margin="979,625,222,9" Opacity="0"/>
-        <Button x:Name="button_ys" Content="Button" Margin="1130,625,70,9" Opacity="0"/>
+        <Button x:Name="button_b3" Content="Button" Margin="220,625,980,9" Opacity="0" Click="button_b3_Click"/>
+        <Button x:Name="button_jq0" Content="Button" Margin="370,625,830,9" Opacity="0" Click="button_jq0_Click"/>
+        <Button x:Name="button_sr" Content="Button" Margin="829,625,371,9" Opacity="0" Click="button_sr_Click"/>
+        <Button x:Name="button_wd" Content="Button" Margin="979,625,222,9" Opacity="0" Click="button_wd_Click"/>
+        <Button x:Name="button_ys" Content="Button" Margin="1130,625,70,9" Opacity="0" Click="button_ys_Click"/>
     </Grid>
 </Window>
