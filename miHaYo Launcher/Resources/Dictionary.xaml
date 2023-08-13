@@ -48,4 +48,12 @@
     <BitmapImage x:Key="MBG_mbg" UriSource="./Background/main_bk.png"/>
     <BitmapImage x:Key="MBG_title" UriSource="./Background/title.png"/>
     <BitmapImage x:Key="MBG_bg" UriSource="./Background/bg.png"/>
+
+    <!--游戏标题图片-->
+    <BitmapImage x:Key="GTI_b2" UriSource="./GameIcon/title/b2.png"/>
+    <BitmapImage x:Key="GTI_b3" UriSource="./GameIcon/title/b3.png"/>
+    <BitmapImage x:Key="GTI_sr" UriSource="./GameIcon/title/sr.png"/>
+    <BitmapImage x:Key="GTI_wd" UriSource="./GameIcon/title/wd.png"/>
+    <BitmapImage x:Key="GTI_ys" UriSource="./GameIcon/title/ys.png"/>
+    <BitmapImage x:Key="GTI_jq0" UriSource="./GameIcon/title/jq0.png"/>
 </ResourceDictionary>

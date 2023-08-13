@@ -35,12 +35,13 @@ namespace miHaYo_Launcher
 
         private void button_b2_Click(object sender, RoutedEventArgs e)
         {
-            imageout();
-            if (opening == "b2")
+            String str = "b2";
+            imageout(str);
+            if (opening == str)
             { return; }
             else
             {
-                opening = "b2";
+                opening = str;
                 Storyboard sb = (Storyboard)this.FindResource("b2_in");
                 sb.Begin();
             }
@@ -48,12 +49,13 @@ namespace miHaYo_Launcher
 
         private void button_b3_Click(object sender, RoutedEventArgs e)
         {
-            imageout();
-            if (opening == "b3")
+            String str = "b3";
+            imageout(str);
+            if (opening == str)
             { return; }
             else
             {
-                opening = "b3";
+                opening = str;
                 Storyboard sb = (Storyboard)this.FindResource("b3_in");
                 sb.Begin();
             }
@@ -62,12 +64,13 @@ namespace miHaYo_Launcher
 
         private void button_sr_Click(object sender, RoutedEventArgs e)
         {
-            imageout();
-            if (opening == "sr")
+            String str = "sr";
+            imageout(str);
+            if (opening == str)
             { return; }
             else
             {
-                opening = "sr";
+                opening = str;
                 Storyboard sb = (Storyboard)this.FindResource("sr_in");
                 sb.Begin();
             }
@@ -76,12 +79,13 @@ namespace miHaYo_Launcher
 
         private void button_wd_Click(object sender, RoutedEventArgs e)
         {
-            imageout();
-            if (opening == "wd")
+            String str = "wd";
+            imageout(str);
+            if (opening == str)
             { return; }
             else
             {
-                opening = "wd";
+                opening = str;
                 Storyboard sb = (Storyboard)this.FindResource("wd_in");
                 sb.Begin();
             }
@@ -90,12 +94,13 @@ namespace miHaYo_Launcher
 
         private void button_ys_Click(object sender, RoutedEventArgs e)
         {
-            imageout();
-            if (opening == "ys")
+            String str = "ys";
+            imageout(str);
+            if (opening == str)
             { return; }
             else
             {
-                opening = "ys";
+                opening = str;
                 Storyboard sb = (Storyboard)this.FindResource("ys_in");
                 sb.Begin();
             }
@@ -104,19 +109,20 @@ namespace miHaYo_Launcher
 
         private void button_jq0_Click(object sender, RoutedEventArgs e)
         {
-            imageout();
-            if (opening == "jp0")
+            String str = "jq0";
+            imageout(str);
+            if (opening == str)
             { return; }
             else
             {
-                opening = "jq0";
+                opening = str;
                 Storyboard sb = (Storyboard)this.FindResource("jq0_in");
                 sb.Begin();
             }
 
         }
 
-        private void imageout()
+        private void imageout(String open)
         {
             if (main_background_show == true)
             {
@@ -125,32 +131,32 @@ namespace miHaYo_Launcher
                 main_background_show = false;
             }
 
-            if (opening == "b2")
+            if (opening == "b2" && open != "b2")
             {
                 Storyboard sb = (Storyboard)this.FindResource("b2_out");
                 sb.Begin();
             }
-            else if (opening == "b3")
+            else if (opening == "b3" && open != "b3")
             {
                 Storyboard sb = (Storyboard)this.FindResource("b3_out");
                 sb.Begin();
             }
-            else if (opening == "sr")
+            else if (opening == "sr" && open != "sr")
             {
                 Storyboard sb = (Storyboard)this.FindResource("sr_out");
                 sb.Begin();
             }
-            else if (opening == "wd")
+            else if (opening == "wd" && open != "wd")
             {
                 Storyboard sb = (Storyboard)this.FindResource("wd_out");
                 sb.Begin();
             }
-            else if (opening == "ys")
+            else if (opening == "ys" && open != "ys")
             {
                 Storyboard sb = (Storyboard)this.FindResource("ys_out");
                 sb.Begin();
             }
-            else if (opening == "jq0")
+            else if (opening == "jq0" && open != "jq0")
             {
                 Storyboard sb = (Storyboard)this.FindResource("jq0_out");
                 sb.Begin();
