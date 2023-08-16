@@ -56,4 +56,11 @@
     <BitmapImage x:Key="GTI_wd" UriSource="./GameIcon/title/wd.png"/>
     <BitmapImage x:Key="GTI_ys" UriSource="./GameIcon/title/ys.png"/>
     <BitmapImage x:Key="GTI_jq0" UriSource="./GameIcon/title/jq0.png"/>
+    
+    <!--按钮-->
+    <BitmapImage x:Key="BUTTON_PLAY" UriSource="./Other Resources/play.png"/>
+    <BitmapImage x:Key="BUTTON_SHOWWEB" UriSource="./Other Resources/showweb.png"/>
+    
+    <!--选择框-->
+    <BitmapImage x:Key="CHOOSE_GAMEICON" UriSource="./Other Resources/选择框.png"/>
 </ResourceDictionary>
