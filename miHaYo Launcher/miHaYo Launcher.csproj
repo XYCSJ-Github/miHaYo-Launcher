@@ -37,6 +37,9 @@
     <None Remove="Resources\GameIcon\title\ys.png" />
     <None Remove="Resources\GameIcon\wd.png" />
     <None Remove="Resources\GameIcon\ys.png" />
+    <None Remove="Resources\Other Resources\play.png" />
+    <None Remove="Resources\Other Resources\showweb.png" />
+    <None Remove="Resources\Other Resources\选择框.png" />
     <None Remove="Resources\StratupImages\Black\ha.png" />
     <None Remove="Resources\StratupImages\Black\mi.png" />
     <None Remove="Resources\StratupImages\Black\OTAKUS.png" />
@@ -99,6 +102,9 @@
     <Resource Include="Resources\GameIcon\title\ys.png" />
     <Resource Include="Resources\GameIcon\wd.png" />
     <Resource Include="Resources\GameIcon\ys.png" />
+    <Resource Include="Resources\Other Resources\play.png" />
+    <Resource Include="Resources\Other Resources\showweb.png" />
+    <Resource Include="Resources\Other Resources\选择框.png" />
     <Resource Include="Resources\StratupImages\Black\WORLD.png" />
   </ItemGroup>
 

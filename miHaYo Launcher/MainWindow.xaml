@@ -190,6 +190,10 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_b2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="b3_in">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
@@ -207,6 +211,10 @@
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gti_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sr_in">
@@ -226,6 +234,10 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_sr" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="wd_in">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
@@ -242,6 +254,10 @@
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gti_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
@@ -262,6 +278,10 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_ys" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="jq0_in">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_jp0" Storyboard.TargetProperty="(UIElement.Opacity)">
@@ -280,6 +300,10 @@
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_jp0" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.965"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
 
         <!--出场-->
@@ -292,6 +316,12 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_b2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_b2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="b3_out">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
@@ -299,6 +329,10 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gti_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_b3" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
@@ -312,6 +346,10 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_sr" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="wd_out">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
@@ -319,6 +357,10 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gti_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_wd" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
@@ -332,6 +374,10 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_ys" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="jq0_out">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bg_jp0" Storyboard.TargetProperty="(UIElement.Opacity)">
@@ -339,6 +385,10 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gti_jp0" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="choose_jp0" Storyboard.TargetProperty="(UIElement.Opacity)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
@@ -451,6 +501,14 @@
         <Image x:Name="wd" Source="{StaticResource GI_wd}" Margin="979,616,222,0" Opacity="0"/>
         <Image x:Name="ys" Source="{StaticResource GI_ys}" Margin="1130,616,70,0" Opacity="0"/>
 
+        <!--选择框-->
+        <Image x:Name="choose_b2" Source="{StaticResource CHOOSE_GAMEICON}" Margin="46,611,1111,-6" Opacity="0"/>
+        <Image x:Name="choose_b3" Source="{StaticResource CHOOSE_GAMEICON}" Margin="196,611,961,-6" Opacity="0"/>
+        <Image x:Name="choose_jp0" Source="{StaticResource CHOOSE_GAMEICON}" Margin="346,611,811,-6" Opacity="0"/>
+        <Image x:Name="choose_sr" Source="{StaticResource CHOOSE_GAMEICON}" Margin="805,611,352,-6" Opacity="0"/>
+        <Image x:Name="choose_wd" Source="{StaticResource CHOOSE_GAMEICON}" Margin="955,611,202,-6" Opacity="0"/>
+        <Image x:Name="choose_ys" Source="{StaticResource CHOOSE_GAMEICON}" Margin="1107,611,50,-6" Opacity="0"/>
+
         <!--游戏图标按钮覆盖层-->
         <Button x:Name="button_b2" Content="Button" Margin="70,625,1130,9" Opacity="0" Click="button_b2_Click"/>
         <Button x:Name="button_b3" Content="Button" Margin="220,625,980,9" Opacity="0" Click="button_b3_Click"/>
@@ -459,5 +517,8 @@
         <Button x:Name="button_wd" Content="Button" Margin="979,625,222,9" Opacity="0" Click="button_wd_Click"/>
         <Button x:Name="button_ys" Content="Button" Margin="1130,625,70,9" Opacity="0" Click="button_ys_Click"/>
         <Button x:Name="Setting" Content="Button" Margin="550,632,562,16" Opacity="0" Click="Setting_Click"/>
+        
+        <!--控制-->
+        
     </Grid>
 </Window>
