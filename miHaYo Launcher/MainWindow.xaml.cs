@@ -162,5 +162,12 @@ namespace miHaYo_Launcher
                 sb.Begin();
             }
         }
+
+        private void Setting_Click(object sender, RoutedEventArgs e)
+        {
+            SettingWindow settingWindow = new SettingWindow();
+            settingWindow.Owner = this;
+            settingWindow.Show();
+        }
     }
 }
