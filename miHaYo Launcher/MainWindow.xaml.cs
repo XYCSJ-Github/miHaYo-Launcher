@@ -169,5 +169,15 @@ namespace miHaYo_Launcher
             settingWindow.Owner = this;
             settingWindow.Show();
         }
+
+        private void button_play_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button_showweb_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

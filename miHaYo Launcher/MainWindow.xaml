@@ -398,6 +398,30 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_play" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-89">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="4"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_play" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_showweb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-89">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut" Power="4"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_showweb" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
 
@@ -510,15 +534,37 @@
         <Image x:Name="choose_ys" Source="{StaticResource CHOOSE_GAMEICON}" Margin="1107,611,50,-6" Opacity="0"/>
 
         <!--游戏图标按钮覆盖层-->
-        <Button x:Name="button_b2" Content="Button" Margin="70,625,1130,9" Opacity="0" Click="button_b2_Click"/>
-        <Button x:Name="button_b3" Content="Button" Margin="220,625,980,9" Opacity="0" Click="button_b3_Click"/>
-        <Button x:Name="button_jq0" Content="Button" Margin="370,625,830,9" Opacity="0" Click="button_jq0_Click"/>
-        <Button x:Name="button_sr" Content="Button" Margin="829,625,371,9" Opacity="0" Click="button_sr_Click"/>
-        <Button x:Name="button_wd" Content="Button" Margin="979,625,222,9" Opacity="0" Click="button_wd_Click"/>
-        <Button x:Name="button_ys" Content="Button" Margin="1130,625,70,9" Opacity="0" Click="button_ys_Click"/>
-        <Button x:Name="Setting" Content="Button" Margin="550,632,562,16" Opacity="0" Click="Setting_Click"/>
-        
+        <Button x:Name="button_b2" Content="b2" Margin="70,625,1130,9" Opacity="0" Click="button_b2_Click"/>
+        <Button x:Name="button_b3" Content="b3" Margin="220,625,980,9" Opacity="0" Click="button_b3_Click"/>
+        <Button x:Name="button_jq0" Content="jq0" Margin="370,625,830,9" Opacity="0" Click="button_jq0_Click"/>
+        <Button x:Name="button_sr" Content="sr" Margin="829,625,371,9" Opacity="0" Click="button_sr_Click"/>
+        <Button x:Name="button_wd" Content="wd" Margin="979,625,222,9" Opacity="0" Click="button_wd_Click"/>
+        <Button x:Name="button_ys" Content="ys" Margin="1130,625,70,9" Opacity="0" Click="button_ys_Click"/>
+        <Button x:Name="Setting" Content="Setting" Margin="550,632,562,16" Opacity="0" Click="Setting_Click"/>
+
         <!--控制-->
-        
+        <Image x:Name="button_image_play" Source="{StaticResource BUTTON_PLAY}" Margin="983,602,23,-12" RenderTransformOrigin="0.5,0.5" Opacity="0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="button_image_showweb" Source="{StaticResource BUTTON_SHOWWEB}" Margin="800,602,206,-12" RenderTransformOrigin="0.5,0.5" Opacity="0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Button x:Name="button_play" Content="Play" Margin="1045,543,85,103" Opacity="0" Click="button_play_Click"/>
+        <Button x:Name="button_showweb" Content="showweb" Margin="864,543,269,103" Opacity="0" Click="button_showweb_Click"/>
     </Grid>
 </Window>
