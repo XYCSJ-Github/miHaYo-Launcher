@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,16 +14,26 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Diagnostics;
+using Ioini;
 
 namespace miHaYo_Launcher
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
+
+    public struct PathGameStart
+    {
+        public string PGS_ys { get; set; }
+        public string PGS_sr { get; set; }
+        public string PGS_b3 { get; set; }
+    }
     public partial class MainWindow : Window
     {
         private string opening = "0";
         private bool main_background_show = false;
+        public PathGameStart pgs;
 
         public MainWindow()
         {
@@ -31,6 +42,26 @@ namespace miHaYo_Launcher
             var iconsb = (Storyboard)this.FindResource("Stratup");
             iconsb.Begin();
             main_background_show = true;
+
+            IniFile ini = new IniFile("setting.ini");
+            if (ini != null )
+            {
+                string str = ini.Read("PathGameStart", "Star Rail");
+                if (str != null)
+                {
+                    pgs.PGS_sr = str;
+                }
+                str = ini.Read("PathGameStart", "Genshin Impact");
+                if (str != null)
+                {
+                    pgs.PGS_ys = str;
+                }
+                str = ini.Read("PathGameStart", "Honkai Impact 3");
+                if (str != null)
+                {
+                    pgs.PGS_b3 = str;
+                }
+            }
         }
 
         private void button_b2_Click(object sender, RoutedEventArgs e)
@@ -165,19 +196,37 @@ namespace miHaYo_Launcher
 
         private void Setting_Click(object sender, RoutedEventArgs e)
         {
-            SettingWindow settingWindow = new SettingWindow();
+            SettingWindow settingWindow = new SettingWindow(this);
             settingWindow.Owner = this;
             settingWindow.Show();
         }
 
         private void button_play_Click(object sender, RoutedEventArgs e)
         {
-
+            if(opening == "ys")
+            {
+                string path = pgs.PGS_ys;
+                Process p = Process.Start(path);
+            }
+            else if(opening == "b3")
+            {
+                string path = pgs.PGS_b3;
+                Process p = Process.Start(path);
+            }
+            else if (opening == "sr")
+            {
+                string path = pgs.PGS_sr;
+                Process p = Process.Start(path);
+            }
         }
 
         private void button_showweb_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+        public void Set_PGS(PathGameStart pgs)
+        {
+            this.pgs = pgs;
         }
     }
 }
