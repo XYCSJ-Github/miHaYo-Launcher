@@ -400,27 +400,27 @@
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_play" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-89">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-229">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseOut" Power="4"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_play" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_showweb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-89">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-230.5">
                     <EasingDoubleKeyFrame.EasingFunction>
                         <PowerEase EasingMode="EaseOut" Power="4"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="button_image_showweb" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
@@ -543,7 +543,7 @@
         <Button x:Name="Setting" Content="Setting" Margin="550,632,562,16" Opacity="0" Click="Setting_Click"/>
 
         <!--控制-->
-        <Image x:Name="button_image_play" Source="{StaticResource BUTTON_PLAY}" Margin="983,602,23,-12" RenderTransformOrigin="0.5,0.5" Opacity="0">
+        <Image x:Name="button_image_play" Source="{StaticResource BUTTON_PLAY}" Margin="983,732,23,-142" RenderTransformOrigin="0.5,0.5" Opacity="0">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -553,7 +553,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="button_image_showweb" Source="{StaticResource BUTTON_SHOWWEB}" Margin="800,602,206,-12" RenderTransformOrigin="0.5,0.5" Opacity="0">
+        <Image x:Name="button_image_showweb" Source="{StaticResource BUTTON_SHOWWEB}" Margin="800,734,206,-144" RenderTransformOrigin="0.5,0.5" Opacity="0">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
