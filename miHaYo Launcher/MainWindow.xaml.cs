@@ -206,17 +206,47 @@ namespace miHaYo_Launcher
             if(opening == "ys")
             {
                 string path = pgs.PGS_ys;
-                Process p = Process.Start(path);
+                try
+                {
+                    Process p = Process.Start(path);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    SettingWindow sw = new SettingWindow(this);
+                    sw.Owner = this;
+                    sw.Show();
+                    MessageBox.Show(ex.Message, "还没有设置 原神 的启动路径", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else if(opening == "b3")
             {
-                string path = pgs.PGS_b3;
-                Process p = Process.Start(path);
+                string path = pgs.PGS_ys;
+                try
+                {
+                    Process p = Process.Start(path);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    SettingWindow sw = new SettingWindow(this);
+                    sw.Owner = this;
+                    sw.Show();
+                    MessageBox.Show(ex.Message, "还没有设置 崩坏3 的启动路径", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else if (opening == "sr")
             {
-                string path = pgs.PGS_sr;
-                Process p = Process.Start(path);
+                string path = pgs.PGS_ys;
+                try
+                {
+                    Process p = Process.Start(path);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    SettingWindow sw = new SettingWindow(this);
+                    sw.Owner = this;
+                    sw.Show();
+                    MessageBox.Show(ex.Message, "还没有设置 崩坏：星穹铁道 的启动路径",MessageBoxButton.OK,MessageBoxImage.Error);
+                }
             }
         }
 
@@ -224,6 +254,7 @@ namespace miHaYo_Launcher
         {
 
         }
+
         public void Set_PGS(PathGameStart pgs)
         {
             this.pgs = pgs;

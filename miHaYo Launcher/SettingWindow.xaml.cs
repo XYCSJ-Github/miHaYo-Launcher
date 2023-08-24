@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.IO;
 using Microsoft.Win32;
 using Ioini;
+using System.Runtime.InteropServices;
 
 namespace miHaYo_Launcher
 {
@@ -39,7 +40,7 @@ namespace miHaYo_Launcher
         private void 浏览_Click_ys(object sender, RoutedEventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.Filter = "可执行文件（*.exe）|*.exe|所有文件（*.*）|*.*";
+            fileDialog.Filter = "原神 启动可执行文件（YuanShen.exe）|YuanShen.exe|可执行文件（*.exe）|*.exe|所有文件（*.*）|*.*";
             fileDialog.Title = "选取 原神 的可执行文件启动路径";
             if (fileDialog.ShowDialog() == true)
             {
@@ -52,7 +53,7 @@ namespace miHaYo_Launcher
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
             fileDialog.Title = "选取 崩坏3 的可执行文件启动路径";
-            fileDialog.Filter = "可执行文件（*.exe）|*.exe|所有文件（*.*）|*.*";
+            fileDialog.Filter = "崩坏3 启动可执行文件（BH3.exe）|BH3.exe|可执行文件（*.exe）|*.exe|所有文件（*.*）|*.*";
             if (fileDialog.ShowDialog() == true)
             {
                 PathGameStart_b3.Text = fileDialog.FileName;
@@ -64,7 +65,7 @@ namespace miHaYo_Launcher
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
             fileDialog.Title = "选取 崩坏：星穹铁道 的可执行文件启动路径";
-            fileDialog.Filter = "可执行文件（*.exe）|*.exe|所有文件（*.*）|*.*";
+            fileDialog.Filter = "崩坏：星穹铁道 可执行文件（StarRail.exe）|StarRail.exe|可执行文件（*.exe）|*.exe|所有文件（*.*）|*.*";
             if (fileDialog.ShowDialog() == true)
             {
                 PathGameStart_sr.Text = fileDialog.FileName;
@@ -79,6 +80,11 @@ namespace miHaYo_Launcher
             ini.Write("PathGameStart", mw.pgs.PGS_sr, "Star Rail");
             ini.Write("PathGameStart", mw.pgs.PGS_ys, "Genshin Impact");
             ini.Write("PathGameStart", mw.pgs.PGS_b3, "Honkai Impact 3");
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
