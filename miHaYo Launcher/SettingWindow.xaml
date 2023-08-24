@@ -10,7 +10,7 @@
     <Grid>
         <TabControl x:Name="tabControl">
             <TabItem Header="原神">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="White">
                     <GroupBox x:Name="PGS_ys" Header="游戏启动路径" Height="96" VerticalAlignment="Top">
                         <StackPanel Height="92">
                             <TextBlock>启动路径：</TextBlock>
@@ -22,7 +22,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="崩坏3">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="White">
                     <GroupBox x:Name="PGS_b3" Header="游戏启动路径" Height="96" VerticalAlignment="Top">
                         <StackPanel Height="92">
                             <TextBlock>启动路径：</TextBlock>
@@ -34,7 +34,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="崩坏：星穹铁道">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="White">
                     <GroupBox x:Name="PGS_sr" Header="游戏启动路径" Height="96" VerticalAlignment="Top">
                         <StackPanel Height="92">
                             <TextBlock>启动路径：</TextBlock>
@@ -43,6 +43,11 @@
                             <Button x:Name="浏览_sr" Content="浏览" Click="浏览_Click_sr" />
                         </StackPanel>
                     </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="其他">
+                <Grid Background="White">
+                    <Button x:Name="OpenSettingIni" Content="打开配置文件" Margin="10,10,647,337" Click="OpenSettingIni_Click"/>
                 </Grid>
             </TabItem>
         </TabControl>

@@ -15,6 +15,7 @@ using System.IO;
 using Microsoft.Win32;
 using Ioini;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace miHaYo_Launcher
 {
@@ -83,6 +84,11 @@ namespace miHaYo_Launcher
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OpenSettingIni_Click(object sender, RoutedEventArgs e)
         {
 
         }
