@@ -16,6 +16,7 @@ using Microsoft.Win32;
 using Ioini;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
+using System.Threading;
 
 namespace miHaYo_Launcher
 {
@@ -27,6 +28,9 @@ namespace miHaYo_Launcher
     {
         PathGameStart pgs;
         MainWindow mw;
+
+        [DllImport("Memory Cleaner.dll", CallingConvention = CallingConvention.Cdecl)]
+        extern static int CleanMomery();
         public SettingWindow(MainWindow mainWindow)
         {
             this.ResizeMode = ResizeMode.CanMinimize;
@@ -91,6 +95,11 @@ namespace miHaYo_Launcher
         private void OpenSettingIni_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void MemoryCleaner_Click(object sender, RoutedEventArgs e)
+        {
+            CleanMomery();
         }
     }
 }

@@ -48,6 +48,7 @@
             <TabItem Header="其他">
                 <Grid Background="White">
                     <Button x:Name="OpenSettingIni" Content="打开配置文件" Margin="10,10,647,337" Click="OpenSettingIni_Click"/>
+                    <Button x:Name="MemoryCleaner" Content="内存优化" Margin="182,10,475,337" Click="MemoryCleaner_Click"/>
                 </Grid>
             </TabItem>
         </TabControl>
