@@ -16,6 +16,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using Ioini;
+using System.IO;
+using System.Net.Http.Headers;
+using Path = System.IO;
 
 namespace miHaYo_Launcher
 {
@@ -34,16 +37,26 @@ namespace miHaYo_Launcher
         private string opening = "0";
         private bool main_background_show = false;
         public PathGameStart pgs;
+        public string iniPath;
 
         public MainWindow()
         {
-            this.ResizeMode = ResizeMode.CanMinimize;
             InitializeComponent();
+            this.ResizeMode = ResizeMode.CanMinimize;
             var iconsb = (Storyboard)this.FindResource("Stratup");
             iconsb.Begin();
             main_background_show = true;
+            string folder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string specificFolder = folder + "\\MHYL";
+            iniPath = specificFolder + "\\setting.ini";
 
-            IniFile ini = new IniFile("setting.ini");
+            if(Directory.Exists(specificFolder) == false)
+            {
+                Directory.CreateDirectory(specificFolder);
+                File.Create(iniPath);
+            }
+
+            IniFile ini = new IniFile(iniPath);
             if (ini != null )
             {
                 string str = ini.Read("PathGameStart", "Star Rail");

@@ -77,7 +77,7 @@ namespace miHaYo_Launcher
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             mw.Set_PGS(pgs);
-            Ioini.IniFile ini = new IniFile("setting.ini");
+            Ioini.IniFile ini = new IniFile(mw.iniPath);
             ini.Write("PathGameStart", mw.pgs.PGS_sr, "Star Rail");
             ini.Write("PathGameStart", mw.pgs.PGS_ys, "Genshin Impact");
             ini.Write("PathGameStart", mw.pgs.PGS_b3, "Honkai Impact 3");
@@ -90,7 +90,7 @@ namespace miHaYo_Launcher
 
         private void OpenSettingIni_Click(object sender, RoutedEventArgs e)
         {
-
+            Process.Start(mw.iniPath);
         }
     }
 }
