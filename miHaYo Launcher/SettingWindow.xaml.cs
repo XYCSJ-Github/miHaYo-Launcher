@@ -81,7 +81,7 @@ namespace miHaYo_Launcher
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             mw.Set_PGS(pgs);
-            Ioini.IniFile ini = new IniFile("setting.ini");
+            Ioini.IniFile ini = new IniFile(mw.iniPath);
             ini.Write("PathGameStart", mw.pgs.PGS_sr, "Star Rail");
             ini.Write("PathGameStart", mw.pgs.PGS_ys, "Genshin Impact");
             ini.Write("PathGameStart", mw.pgs.PGS_b3, "Honkai Impact 3");
@@ -94,7 +94,15 @@ namespace miHaYo_Launcher
 
         private void OpenSettingIni_Click(object sender, RoutedEventArgs e)
         {
-
+            Process myProcess = new Process();//创建进程对象
+            myProcess.StartInfo.FileName = "cmd.exe";//设置打开cmd命令窗口
+            myProcess.StartInfo.UseShellExecute = false;//不使用操作系统shell启动进程的值
+            myProcess.StartInfo.RedirectStandardInput = true;//设置可以从标准输入流读取值
+            myProcess.StartInfo.RedirectStandardOutput = true;//设置可以向标准输出流写入值
+            myProcess.StartInfo.RedirectStandardError = true;//设置可以显示输入输出流中出现的错误
+            myProcess.StartInfo.CreateNoWindow = true;//设置在新窗口中启动进程
+            myProcess.Start();//启动进程
+            myProcess.StandardInput.WriteLine(mw.iniPath);//传入要执行的命令
         }
 
         private void MemoryCleaner_Click(object sender, RoutedEventArgs e)
