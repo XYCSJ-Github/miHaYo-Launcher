@@ -3,6 +3,8 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 
+#pragma warning disable 
+
 namespace Ioini
 {
     class IniFile  
