@@ -3,3 +3,5 @@ LB230813-01：点击两次以上图标时入场动画不正确 GitID：0f16173f7
 	(已修复 GitID：0f16173f77d0e42c5f4b7fb20f72995e1fe32bd5)
 LB230823-01：启动时游戏页面入口无法触发 GitID：98dcce70ff50631f23eedb70b6537905a606ab7c 
 	(已修复 GitID：6e99f727e0f77d3f282a5c04f2d389c454b7d0b8)
+LB230827-01：启动游戏路径混淆 GitID：2ec7a3959943b0023e68c511a867ebbf9e5fd648
+	(已修复 GitID：3efdca1c27741e84e178866ff10ae336735af18d)

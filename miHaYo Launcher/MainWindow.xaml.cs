@@ -234,7 +234,7 @@ namespace miHaYo_Launcher
             }
             else if(opening == "b3")
             {
-                string path = pgs.PGS_ys;
+                string path = pgs.PGS_b3;
                 try
                 {
                     Process p = Process.Start(path);
@@ -249,7 +249,7 @@ namespace miHaYo_Launcher
             }
             else if (opening == "sr")
             {
-                string path = pgs.PGS_ys;
+                string path = pgs.PGS_sr;
                 try
                 {
                     Process p = Process.Start(path);
