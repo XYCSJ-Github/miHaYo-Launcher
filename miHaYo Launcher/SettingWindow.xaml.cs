@@ -107,6 +107,12 @@ namespace miHaYo_Launcher
 
         private void MemoryCleaner_Click(object sender, RoutedEventArgs e)
         {
+            Thread thr_ = new Thread(CleanMomery);
+            thr_.Start();
+        }
+
+        private void CleanMomery(object? obj)
+        {
             CleanMomery();
         }
     }

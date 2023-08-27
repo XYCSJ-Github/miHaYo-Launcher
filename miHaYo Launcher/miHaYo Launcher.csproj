@@ -126,4 +126,10 @@
     <Resource Include="Resources\StratupImages\White\yo.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Memory Cleaner.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
