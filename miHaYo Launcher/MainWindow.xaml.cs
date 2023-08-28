@@ -19,6 +19,7 @@ using Ioini;
 using System.IO;
 using System.Net.Http.Headers;
 using Path = System.IO;
+using System.Drawing;
 
 
 namespace miHaYo_Launcher
@@ -266,12 +267,46 @@ namespace miHaYo_Launcher
 
         private void button_showweb_Click(object sender, RoutedEventArgs e)
         {
-
+            if (opening == "b2")
+            {
+                openweb("https://www.benghuai.com/index/");
+            }
+            else if (opening == "b3")
+            {
+                openweb("https://bh3.mihoyo.com/");
+            }
+            else if (opening == "sr")
+            {
+                openweb("https://sr.mihoyo.com/");
+            }
+            else if (opening == "wd")
+            {
+                openweb("https://wd.mihoyo.com/fab/bdsem");
+            }
+            else if (opening == "ys")
+            {
+                openweb("https://ys.mihoyo.com/main/");
+            }
+            else if (opening == "jq0")
+            {
+                openweb("https://zzz.mihoyo.com/");
+            }
         }
 
         public void Set_PGS(PathGameStart pgs)
         {
             this.pgs = pgs;
+        }
+
+        private void openweb(string url)
+        {
+            ProcessStartInfo process = new ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            };
+
+            Process.Start(process);
         }
     }
 }
