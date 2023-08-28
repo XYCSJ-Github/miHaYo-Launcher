@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:miHaYo_Launcher"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="SettingWindow" Height="450" Width="800" Closing="Window_Closing">
+        Title="设置" Height="450" Width="800" Closing="Window_Closing">
     <Grid>
         <TabControl x:Name="tabControl">
             <TabItem Header="原神">
