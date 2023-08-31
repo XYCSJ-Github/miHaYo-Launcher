@@ -10,7 +10,12 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
-  <ItemGroup>
+	<PropertyGroup>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<Deterministic>false</Deterministic>
+	</PropertyGroup>
+
+	<ItemGroup>
     <None Remove="Resources\Background\1\b2 1.png" />
     <None Remove="Resources\Background\1\b2.png" />
     <None Remove="Resources\Background\1\b3.png" />
@@ -142,7 +147,7 @@
 
   <ItemGroup>
     <None Update="Memory Cleaner.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

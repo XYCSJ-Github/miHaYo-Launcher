@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_3C5F2E9F6CF24E65BB7FFC2F0F40C7D5"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_EA833BEA87B345B5BE38586355FA13A4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -43,6 +37,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -59,6 +69,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -90,26 +108,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3C5F2E9F6CF24E65BB7FFC2F0F40C7D5"
-            {
-            "SourcePath" = "8:C:\\Windows\\System32\\msiexec.exe"
-            "TargetName" = "8:msiexec.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_07E84B553E8C47FBB7E38EA6DEC3E1EF"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -148,17 +146,6 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_9D4DD75D604D4EC09121D0C3F3CE60C8"
-                    {
-                    "Name" = "8:YuYuTianYang"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_D3EE7C2D42BB4692A803C01DD55D8B81"
-                        "Folders"
-                        {
-                        }
-                    }
                 }
             }
         }
@@ -298,20 +285,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2D0AEB0087754E538D856132CE48EF70"
-            {
-            "Name" = "8:Uninstall"
-            "Arguments" = "8:/x {C758B135-3D24-4E09-96E8-07D646DE26E5}"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_3C5F2E9F6CF24E65BB7FFC2F0F40C7D5"
-            "Folder" = "8:_9D4DD75D604D4EC09121D0C3F3CE60C8"
-            "WorkingFolder" = "8:_07E84B553E8C47FBB7E38EA6DEC3E1EF"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_69AC504CFEDD4622A9CDB07625ED1A20"
             {
             "Name" = "8:miHaYo Launcher"
@@ -321,7 +294,7 @@
             "IconIndex" = "3:32512"
             "Transitive" = "11:FALSE"
             "Target" = "8:_EA833BEA87B345B5BE38586355FA13A4"
-            "Folder" = "8:_9D4DD75D604D4EC09121D0C3F3CE60C8"
+            "Folder" = "8:_D37F07E72C4045C79B57490A8F2713FD"
             "WorkingFolder" = "8:_07E84B553E8C47FBB7E38EA6DEC3E1EF"
             "Icon" = "8:_EA833BEA87B345B5BE38586355FA13A4"
             "Feature" = "8:"
@@ -755,7 +728,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EA833BEA87B345B5BE38586355FA13A4"
             {
-            "SourcePath" = "8:..\\miHaYo Launcher\\obj\\Release\\net6.0-windows\\win-x64\\apphost.exe"
+            "SourcePath" = "8:..\\miHaYo Launcher\\obj\\Debug\\net6.0-windows\\win-x64\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_07E84B553E8C47FBB7E38EA6DEC3E1EF"
